@@ -1,0 +1,123 @@
+*{
+   
+margin:0;
+padding: 0;
+box-sizing: border-box;
+
+}
+body{
+    
+    background: rgb(182,15,100);
+    background: linear-gradient(149deg, rgba(182,15,100,1) 25%, rgba(94,9,134,1) 50%, rgba(15,144,89,1) 100%) no-repeat;
+    
+   
+}
+
+
+    .container{
+        /* display: grid;
+        align-items: center;
+         grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+        grid-template-rows:  680px ;
+        font-family: 'Share Tech Mono', monospace; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        max-width: 100%;
+        font-family: 'Share Tech Mono', monospace;
+       
+    }
+
+    .img-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-left >img{
+        display: block;
+        width:65%;
+        object-fit: cover;
+
+    }
+
+   .text-404 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 800;
+     position: relative;
+     left:3em;
+     top:2em;
+   } 
+
+   .content{
+      padding-bottom: 25px;
+   }
+
+   .content-right{
+       margin-right: 50px;
+   }
+  
+.content-right > h1 {
+    /* font-size: 4em;   old */
+    font-size: 3.5em; /*new*/
+    font-weight: 900;
+    width: 104%;
+    padding-top: 50px;
+}
+
+.content-right > p{
+    /* font-size: 1.2em; old */
+    /* new */ font-size: 0.823em ;
+        font-weight: 400;
+        width: 40%;
+        color: #ddabab;
+        padding-bottom: 2.5em;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: .9em;
+    padding: 1em 2rem;
+    font-weight: 800;
+    background-color: black;
+    color: #fff;
+}
+
+.btn:hover{
+    background: #fff;
+    color: black;
+    
+}
+
+@media  (max-width:590px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-left >img{
+        display: block;
+        width:300px;
+        object-fit: cover;
+
+    }
+    
+    .content-right{
+        text-align: center;
+        padding: 0;
+    }
+    .content-right > p{
+        position: relative;
+        right: -48px;
+        width: 71%;
+        padding-bottom: 4em;
+    }
+    .content-right > h1{
+        font-size: 2.4em;
+        /* width:60%; */
+        
+    }
+}
